@@ -1,0 +1,17 @@
+{
+  "name": "sports-app",
+  "version": "1.0.0",
+  "description": "* Professor Krasso\r * George Taylor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Taylor",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.28.0",
+    "pino": "^6.13.4"
+  },
+  "devDependencies": {},
+  "keywords": []
+}
