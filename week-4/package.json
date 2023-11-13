@@ -1,0 +1,12 @@
+{
+  "name": "nodejespet",
+  "version": "1.0.0",
+  "description": "Pets Website",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "George Taylor",
+  "license": "MIT"
+}
