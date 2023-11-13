@@ -11,10 +11,10 @@ app.use('/js', express.static (__dirname + 'public/js'))
 app.use('/img', express.static (__dirname + 'public/img'))
 
 app.get('', (req, res) => {
-    res.sendFile(__dirname + '/views/index.html')
+    res.sendFile(__dirname + '/views/index.ejs')
 })
 app.get('', (req, res) => {
-        res.sendFile(__dirname + '/views/grooming.html')
+        res.sendFile(__dirname + '/views/grooming.ejs')
 })
 //Listen on port 3000
 app.listen(port, () => console.info(`Listening on port ${port}`))
