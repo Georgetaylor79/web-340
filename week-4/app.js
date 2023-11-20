@@ -1,20 +1,27 @@
 // imports
 const express = require('express')
+const path = require('path');
+
 const app = express()
 const port = 3000
 
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs'); 
 
 //Static Files
-app.use(express.static('public'))
-app.use('/css', express.static (__dirname + 'public/css'))
-app.use('/js', express.static (__dirname + 'public/js'))
-app.use('/img', express.static (__dirname + 'public/img'))
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('', (req, res) => {
-    res.sendFile(__dirname + '/views/index.ejs')
+    res.render('index', {
+        title: 'Pets-R-Us: Home'
+    })
 })
-app.get('', (req, res) => {
-        res.sendFile(__dirname + '/views/grooming.ejs')
+
+app.get('/grooming', function(req, res) {
+    res.render('grooming', {
+        title: 'Pets-R-Us: Grooming'
+    })
 })
+
 //Listen on port 3000
 app.listen(port, () => console.info(`Listening on port ${port}`))

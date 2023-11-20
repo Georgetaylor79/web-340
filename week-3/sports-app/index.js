@@ -6,7 +6,7 @@ let teams = TeamManager.getTeams();
 
 //Display teh contents of the teams array.
 for (let team of teams){
-    console.log(TeamManager.displayTeam(teams));
+    console.log(team.name + " " + team.mascot);
 }
 
 const Alabama = TeamManager.getTeam('Alabama');

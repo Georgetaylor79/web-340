@@ -1,5 +1,5 @@
 // Imports the Team class from team.js file 
-const Team = require('./team-manager');
+const Team = require('./team');
 
 //Creates an array of total of 5 teams an assigns team values
 
@@ -20,7 +20,7 @@ module.exports.getTeams = function() {
 //Creates a function named getTeam with a single parameter for name. 
 //Return a single team object using JavaScript's built-in find()function. 
 module.exports.getTeam = function(name) {
-    for (let team of Teams) {
+    for (let team of teams) {
         if (team.name === name){
            return team 
         }
