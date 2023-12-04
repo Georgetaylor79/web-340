@@ -23,11 +23,5 @@ app.get('/grooming', function(req, res) {
     })
 })
 
-app.get('/register', function(req, res) {
-    res.render('register', {
-        title: 'Pets-R-Us: Register'
-    })
-})
-
 //Listen on port 3000
 app.listen(port, () => console.info(`Listening on port ${port}`))
