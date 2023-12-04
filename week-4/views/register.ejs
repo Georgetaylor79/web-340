@@ -1,0 +1,56 @@
+
+
+
+<header>
+    <%- include('../partial/_header')%>
+  </header>
+      <div class="hero-background">
+        <img
+          src="img/BeagleHP1.jpg"
+          alt="Beagle"
+          class="hero-image"
+        />
+      </div>
+      <div class="grid-container-boarding" style="margin-left: 30%; margin-right: 30%;">
+          <div class="card">
+            <div class="card-content">
+          <h3 class="grid-header">Registration Form</h3>
+          <div class="grid-item">
+            <!-- action needs to match the app.post in index.js -->
+            <form action="/customers" method="post"> 
+          <div class="form">
+            <div class="form-field">
+              <!-- customerId for the req.body.customerId -->
+              <label for="customerId">Name:</label>
+              <input type="text" class="input" id="customerId" name="customerId" required autofocus>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+              <div class="form">
+                <div class="form-field">
+                  <!-- email for the req.body.email -->
+                  <label for="email">Email:</label>
+                  <input type="text" class="input" id="email" name="email"/>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="form">
+                <div class="form-field">
+                  <button type="submit" class="btn btn-primary full-width" id="btnSubmit" value="Pets-R-Us Register">Submit</button>
+                </div>
+              </div>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+      <footer><%- include('../partial/_footer')%></footer>
+    </body>
+    <script type="module">
+    </script>
+  </html>
+  
