@@ -99,3 +99,8 @@ a {
     float: right;
     width: 49.9%;
 }
+
+.container img {
+    height: 100%;
+    width: 100%;
+}
