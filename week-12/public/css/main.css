@@ -93,7 +93,9 @@ a {
     max-height: 550px;
     overflow: hidden;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
 }
+
 
 .extra {
     background: #147FA9;
@@ -108,6 +110,27 @@ a {
 
 }
 
-.container img {
-    object-fit: contain;
+/*grooming page css*/
+
+
+.wrappergroom {
+    float: left;
+    width: 100%;
+    margin-left: -200px;
+    background: #b7481c;
+}
+
+.navigationgroom {
+    float: left;
+    width: 25%;
+    margin-left: -25%;
+    background: #7cb71c;
+
+}
+
+.extragroom {
+    
+    float: left;
+    width: 200px;
+    background: #147FA9
 }
