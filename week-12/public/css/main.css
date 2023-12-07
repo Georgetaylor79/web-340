@@ -88,6 +88,12 @@ a {
     height: 75%;
 }
 
+.navigation-background {
+    max-height: 550px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 .extra {
     background: #147FA9;
     float: right;
