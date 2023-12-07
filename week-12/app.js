@@ -35,5 +35,23 @@ app.get('/registration', function(req, res) {
     })
 })
 
+app.get('/customerlist', function(req, res) {
+    res.render('customerlist', {
+        title: 'Pets-R-Us: Customerlist'
+    })
+})
+
+app.get('/appointment', function(req, res) {
+    res.render('appointment', {
+        title: 'Pets-R-Us: Appointment'
+    })
+})
+
+app.get('/boarding', function(req, res) {
+    res.render('boarding', {
+        title: 'Pets-R-Us: Boarding'
+    })
+})
+
 //Listen on port 3000
 app.listen(port, () => console.info(`Listening on port ${port}`))
