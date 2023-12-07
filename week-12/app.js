@@ -17,6 +17,23 @@ app.get('', (req, res) => {
     })
 })
 
+app.get('/grooming', function(req, res) {
+    res.render('grooming', {
+        title: 'Pets-R-Us: Grooming'
+    })
+})
+
+app.get('/training', function(req, res) {
+    res.render('training', {
+        title: 'Pets-R-Us: Training'
+    })
+})
+
+app.get('/registration', function(req, res) {
+    res.render('registration', {
+        title: 'Pets-R-Us: Registration'
+    })
+})
 
 //Listen on port 3000
 app.listen(port, () => console.info(`Listening on port ${port}`))
