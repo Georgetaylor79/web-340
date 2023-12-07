@@ -77,3 +77,19 @@ a {
     background-color: #0000fe;
     
 } 
+
+
+/*top picture on each page*/
+
+.navigation {
+    background: #7cb71c;
+    float: left;
+    width: 50%;
+    height: 75%;
+}
+
+.extra {
+    background: #147FA9;
+    float: right;
+    width: 49.9%;
+}
