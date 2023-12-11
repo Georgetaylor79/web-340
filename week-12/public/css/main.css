@@ -82,7 +82,7 @@ a {
 /*top picture on each page*/
 
 .navigation {
-    background: #7cb71c;
+    background: #fff;
     float: left;
     width: 50%;
     height: 75%;
@@ -98,7 +98,7 @@ a {
 
 
 .extra {
-    background: #147FA9;
+    background: #bce6f7;
     float: right;
     width: 49.9%;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -194,3 +194,21 @@ a {
     color: #fffbfc;
   }
   /* grid end */
+
+  hr.class-1{
+    border-top: 10px solid  #00deff;
+  }
+
+  .card1{
+    background-color: #e9f7ff;
+    
+  }
+
+ul {
+    list-style: none
+}
+  footer {
+  
+    background-color: #fff;
+    color: #0000fe;
+  }
