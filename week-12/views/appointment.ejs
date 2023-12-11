@@ -55,3 +55,47 @@
         </div>
     
 </div>
+
+<div class="grid-container-boarding" style="margin-left: 30%; margin-right: 30%;">
+    <div class="card">
+      <div class="card-content">
+        <h3 class="grid-header">Schedule an Appointment</h3>
+        <div class="grid-item">
+          <div class="form">
+            <form action="/appointments" method="post">
+              <div class="form-field">
+                        <!-- User Name for the req.body.userName -->
+                <label for="userName">User Name:</label>
+                <input type="text" class="input" id="userName" name="userName" placeholder="User Name" autofocus required>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="form">
+              <div class="form-field">
+              <!-- First Name for the req.body.firstName -->
+  
+                  <label for="firstName">First Name:</label>
+                  <input type="text" class="input" id="firstName" name="firstName" placeholder="First Name" required>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="form">
+              <div class="form-field">
+              <!-- Last Name for the req.body.lastName -->
+                <form action="/appointments" method="post">
+                  <label for="lastName">Last Name:</label>
+                  <input type="text" class="input" id="lastName" name="lastName" placeholder="Last Name" required>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="form">
+              <div class="form-field" id="email">
+                <!-- email for the req.body.email -->
+                  <label for="email">Email:</label>
+                  <input type="text" class="input" id="email" name="email" placeholder="Email" required>
+              </div>
+            </div>
+          </div>
