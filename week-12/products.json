@@ -1,0 +1,13 @@
+{
+    "id": 1 ,
+    "name": "Jesse",
+    "email": "jesse@yahoo.com",
+    "phone": [ "333-3333"],
+
+    "id": 2 ,
+    "name": "Bill",
+    "email": "Bill@yahoo.com",
+    "phone": ["444-4444"]
+
+}
+  
