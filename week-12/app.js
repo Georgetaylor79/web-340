@@ -1,9 +1,18 @@
 // imports
 const express = require('express')
 const path = require('path');
-
+const mongoose = require("mongoose")
 const app = express()
 const port = 3000
+
+const conn = "mongodb+srv://taylor79:<AtlasDB19>@cluster0.f36akkm.mongodb.net/web340DB/?retryWrites=true&w=majority"
+mongoose.connect(conn)
+.then(() => {
+    console.log("connected to mongodb")
+})
+.catch(err => {
+    console.log("error connecting to mongodb", err)
+})
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs'); 
@@ -77,7 +86,7 @@ app.post('/register', (req, res, next) =>{
 })
 
 app.get('/customers', (req, res)=> {
-    Customer.find{}, function(err, customers)  {
+    Customer.find({}, function(err, customers)  {
         if (err) {
             console.log(err);
             next(err);
@@ -91,7 +100,7 @@ app.get('/customers', (req, res)=> {
     })
 })
 
-app.get('/booking', req, res) =>  {
+app.get('/booking', (req, res) =>  {
     let jsonFile = fs.readFileSync('./public/data/services.json');
     let service = JSON.parse(jsonFile);
 
@@ -104,7 +113,7 @@ app.get('/booking', req, res) =>  {
 
 })
 
-app.post('/booking, (req, res') => {
+app.post('/booking', (req, res) => {
     const customerId = req.body.customerId;
     const firstName = req.body.firstName;
     const email = req.body.email;
@@ -112,13 +121,15 @@ app.post('/booking, (req, res') => {
 
     console.log(`CustomerId: ${customerId}; First name: ${firstName}; Last name: ${lastName}; Email: ${email}; Service: ${service}`)
 
-    let scheduledAppointment = New Appointment({
+    let scheduledAppointment = new Appointment({
         customerId,
         firstName, 
         lastName,
         email,
         service
     });
+        
+   
 
     Appointment.create(scheduledAppointment, function(err, appointment){
         if (err) {
