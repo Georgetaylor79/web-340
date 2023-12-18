@@ -31,7 +31,35 @@
         </div>
     
 </div>
-
+<div class="card center-div">
+  <div class="card-title">
+      Customer List
+  </div>
+  <!-- This is the table that displays our MongoDB customers -->
+  <div class="card-content">
+      <% if(customer.length > 0) { %>
+      <table class="table">
+          <tr>
+              <th>Customer Id</th>
+              <th>Email</th>
+              <th>Remove</th>
+          </tr>
+          <tbody>
+          <% customer.forEach(function(customer) { %>
+          <tr>
+              <td><%=customer.customerId  %></td>
+              <td><%= customer.email %></td>
+              <td><a href="#">--DELETE--</a></td>
+          </tr>
+          <% }) %>
+          </tbody>
+      </table>
+      <% } else { %>
+      <h3>Customers have not been added to the MongoDB database.  Try adding some!</h3>
+      <% } %>
+  </div>
+</div>
+</div>
 <%- include('./partials/_footer.ejs') -%>
 
 </body>
