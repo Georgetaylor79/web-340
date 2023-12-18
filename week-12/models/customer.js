@@ -1,6 +1,6 @@
 
 const mongoose = require("mongoose");
-cost Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
 let customerSchema = new Schema({
     customerId: { type: Number, unique: true, required: true },
