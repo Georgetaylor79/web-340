@@ -44,9 +44,9 @@ app.get('/registration', function(req, res) {
     })
 })
 
-app.get('/customerlist', function(req, res) {
-    res.render('customerlist', {
-        title: 'Pets-R-Us: Customerlist'
+app.get('/customer', function(req, res) {
+    res.render('customer-list', {
+        title: 'Pets-R-Us: Customer List'
     })
 })
 
