@@ -60,26 +60,25 @@
   </div>
   <!-- This is the table that displays our MongoDB customers -->
   <div class="card-content">
-      <% if(customer.length > 0) { %>
+     
       <table class="table">
           <tr>
               <th>Customer Id</th>
               <th>Email</th>
-              <th>Remove</th>
+              
           </tr>
           <tbody>
-          <% customer.forEach(function(customer) { %>
+          <% customer.forEach(function(cus) { %>
           <tr>
-              <td><%=customer.customerId  %></td>
+              <td><%=cus.customerId  %></td>
               <td><%= customer.email %></td>
-              <td><a href="#">--DELETE--</a></td>
+            
           </tr>
-          <% }) %>
+         
           </tbody>
+          <% })%>
       </table>
-      <% } else { %>
-      <h3>Customers have not been added to the MongoDB database.  Try adding some!</h3>
-      <% } %>
+
   </div>
 </div>
 </div>
