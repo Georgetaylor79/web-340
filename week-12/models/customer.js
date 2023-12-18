@@ -2,9 +2,10 @@
 const mongoose = require("mongoose");
 cost Schema = mongoose.Schema;
 
-const customerSchema = New Schema({
-
-    customerId: { type: String, required: true, unique: true},
-    email: { type: String, required; true, unique; true};
+let customerSchema = new Schema({
+    customerId: { type: Number, unique: true, required: true },
+    email: { type: String, unique: true, required: true}
 })
+
+module.export = mongoose.model('Customer, customerSchema');
 
